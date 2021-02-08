@@ -10,7 +10,7 @@ namespace FEWAdvUIApi.Controllers
     {
 
         [HttpHead("/users/emails/{email}")]
-        public ActionResult<bool> UserExists(string email)
+        public ActionResult UserExists(string email)
         {
             if(email.ToLower().Trim().EndsWith("@aol.com"))
             {
