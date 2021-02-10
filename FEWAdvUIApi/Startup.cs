@@ -31,7 +31,7 @@ namespace FEWAdvUIApi
                 options.AddDefaultPolicy(builder =>
                 {
                     builder.WithOrigins("http://localhost:4200");
-                    //builder.WithMethods("GET", "POST", "PUT", "DELETE", "HEAD");
+                    //builder.WithMethods("GET", "POST", "PUT", "DELETE", "HEAD");sed the allow any method instead
                     builder.AllowAnyMethod();
                     builder.AllowAnyHeader();
                 });
