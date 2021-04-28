@@ -10,7 +10,7 @@ namespace FEWAdvUIApi.Controllers
     public class UsersController : ControllerBase
     {
 
-        [ResponseCache(Location = ResponseCacheLocation.Client, Duration =150000)]
+        
         [HttpHead("/users/emails/{email}")]
         public ActionResult UserExists(string email)
         {
