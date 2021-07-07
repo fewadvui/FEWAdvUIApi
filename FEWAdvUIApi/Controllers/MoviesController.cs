@@ -9,6 +9,7 @@ namespace FEWAdvUIApi.Controllers
     public class MoviesController : ControllerBase
     {
         [HttpGet("/movies")]
+        [ResponseCache(Location =ResponseCacheLocation.Client, Duration = 3*60)]
         public ActionResult GetMovies()
         {
             var data = new List<Movie>
